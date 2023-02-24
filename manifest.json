@@ -1,0 +1,26 @@
+{
+
+    "manifest_version": 2,
+    "name": "The Door",
+    "version": "0.1",
+  
+    "description": "Automatically block terfs on the webbed hellsite. Show 'em the door! /// Relies on the Shinigami Eyes addon.",
+  
+    "icons": {
+      "48": "icons/border-48.png"
+    },
+  
+    "content_scripts": [
+      {
+        "matches": ["*://tumblr.com/*", "*://*.tumblr.com/*"],
+        "js": ["/scripts/main.js"]
+      }
+    ],
+
+    "background": {
+        "scripts": ["/scripts/background.js"],
+        "persistent": false
+    }
+  
+  }
+  
